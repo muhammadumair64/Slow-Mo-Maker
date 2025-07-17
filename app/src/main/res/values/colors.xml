@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF8411</color>
+    <color name="off_white">#D7D7D7</color>
+
+    <color name="light_Text">#777777</color>
+
+    <!-- colors for dar theme and light theme -->
+    <color name="textColor">#FF000000</color>
+    <color name="cardClr">#FFFFFFFF</color>
+    <color name="ad_bg_color">#F6F6F6</color>
+    <color name="ad_border">#EDECEC</color>
+
+    <!-- Actual color code  -->
+    <color name="status_bar">#6D2587</color>
+    <color name="background_color">#101420</color>
+     <color name="gradient_start">#0DBEFF</color>
+    <color name="gradient_end">#8B31F3</color>
+    <color name="bottom_card_color">#232238</color>
+
+    <color name="black_withAlpha">#83000000</color>
+
+    <color name="white_with_alpha">#80FFFFFF</color>
+
+    <color name="shimmer_effect_color">#BFBDBD</color>
+    <color name="dashboard_bg">#0B0925</color>
+    <color name="dashboard_alpha">#4D000000</color>
+
+<!--    <string name="orange">#F25748</string>-->
+    <color name="yellow">#F3B30A</color>
+    <color name="orange">#E66F00</color>
+</resources>

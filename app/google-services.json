@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309578643859",
+    "project_id": "video-editor-9e626",
+    "storage_bucket": "video-editor-9e626.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309578643859:android:5ec795faa9e5cb38cd5066",
+        "android_client_info": {
+          "package_name": "com.moviemaker.imagestovideo.slowmotion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHbb6sWgdC_Dz2zhMZt0YOcVkoDgC-8Z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

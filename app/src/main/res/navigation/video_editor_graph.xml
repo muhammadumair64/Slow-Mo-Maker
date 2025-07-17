@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_editor_graph"
+    app:startDestination="@id/videoEditorTabsFragment">
+
+    <fragment
+        android:id="@+id/videoEditorTabsFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.VideoEditorTabsFragment"
+        android:label="fragment_video_editor_tabs"
+        tools:layout="@layout/fragment_video_editor_tabs" >
+        <action
+            android:id="@+id/action_videoEditorTabsFragment_to_trimmerFragment"
+            app:destination="@id/trimmerFragment" />
+        <action
+            android:id="@+id/action_videoEditorTabsFragment_to_speedFragment"
+            app:destination="@id/speedFragment" />
+        <action
+            android:id="@+id/action_videoEditorTabsFragment_to_reverseFragment"
+            app:destination="@id/reverseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trimmerFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.TrimmerFragment"
+        android:label="fragment_trimmer"
+        tools:layout="@layout/fragment_trimmer" >
+        <action
+            android:id="@+id/action_trimmerFragment_to_videoEditorTabsFragment"
+            app:destination="@id/videoEditorTabsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speedFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.SpeedFragment"
+        android:label="SpeedFragment" >
+        <action
+            android:id="@+id/action_speedFragment_to_videoEditorTabsFragment"
+            app:destination="@id/videoEditorTabsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reverseFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.ReverseFragment"
+        android:label="ReverseFragment" >
+        <action
+            android:id="@+id/action_reverseFragment_to_videoEditorTabsFragment"
+            app:destination="@id/videoEditorTabsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_50sdp"
+      android:background="@color/background_color">
+      <ImageView
+          android:id="@+id/music"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"
+          android:layout_centerVertical="true"
+          android:layout_marginStart="@dimen/_10sdp"
+          android:src="@drawable/music_note"
+          android:layout_gravity="center" />
+
+
+    <TextView
+        android:layout_toEndOf="@id/music"
+        android:id="@+id/audio_title"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:text="Music 1"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_toStartOf="@id/playPause"
+        />
+
+    <FrameLayout
+        android:id="@+id/play_anim"
+         android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        >
+
+      <com.airbnb.lottie.LottieAnimationView
+          android:layout_gravity="center"
+          android:background="@color/background_color"
+          android:id="@+id/play_anim_lottie"
+          android:layout_width="@dimen/_50sdp"
+          android:layout_height="@dimen/_30sdp"
+          app:lottie_autoPlay="true"
+          app:lottie_loop="true"
+          app:lottie_rawRes="@raw/wave" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/playPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:src="@drawable/play"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/light_Text" />
+  </RelativeLayout>
+</layout>

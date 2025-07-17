@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editor_graph"
+    app:startDestination="@id/sliderTabsFragment">
+
+    <fragment
+        android:id="@+id/sliderTabsFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.SliderTabsFragment"
+        android:label="fragment_slider_tabs"
+        tools:layout="@layout/fragment_slider_tabs" >
+        <action
+            android:id="@+id/action_sliderTabsFragment_to_transitionFragment"
+            app:destination="@id/transitionFragment" />
+        <action
+            android:id="@+id/action_sliderTabsFragment_to_effectsFragment"
+            app:destination="@id/effectsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transitionFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.TransitionFragment"
+        android:label="TransitionFragment" >
+        <action
+            android:id="@+id/action_transitionFragment_to_sliderTabsFragment"
+            app:destination="@id/sliderTabsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/effectsFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.EffectsFragment"
+        android:label="EffectsFragment" >
+        <action
+            android:id="@+id/action_effectsFragment_to_sliderTabsFragment"
+            app:destination="@id/sliderTabsFragment" />
+    </fragment>
+</navigation>

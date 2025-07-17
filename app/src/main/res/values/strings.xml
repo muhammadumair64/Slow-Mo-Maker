@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Slow Motion Video Maker&amp;Editor</string>
+    <string name="inapp_success_meaage">Subscription activated, Enjoy! Please Restart the App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="create_stories_from_your_n_photos_videos"><![CDATA[Create Stories from Your\n Photos & Videos]]></string>
+    <string name="slideshow_video_maker">Slow-Mo Video Maker</string>
+    <string name="unlock_all_premium_features">Unlock All Premium Features</string>
+    <string name="go_pro">GO PRO</string>
+    <string name="start_now">START NOW</string>
+    <string name="free_trail_version_n_cancel_anytime">Free Trail Version\n Cancel Anytime</string>
+    <string name="free_version">Free Version</string>
+    <string name="create_new">Create New</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="please_wait">Please Wait …</string>
+    <string name="reverse_with_audio">Reverse With Audio</string>
+    <string name="license_agrement">License Agrement</string>
+    <string name="restore_access">Restore Access</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="weekly_premium">Weekly Premium</string>
+    <string name="week">/week</string>
+    <string name="for_2_weeks">(for 2 weeks)</string>
+    <string name="cancel_subscription_url">https://support.google.com/googleplay/answer/7018481</string>
+    <string name="thanks_message">Thanks, Review Successfully Posted</string>
+    <string name="reward_ad_not">Reward ad is not available.Please try again.</string>
+    <string name="cancel_anytime_in_the_play_store_at_no_additional_cost">Cancel anytime in the Play Store at no additional cost, your subscription will then cease at the end of the current term. By proceeding further, you are accepting our <b>Terms of Service</b> , which include details of your right to withdraw. Please see our <b>Privacy Policy</b></string>
+</resources>

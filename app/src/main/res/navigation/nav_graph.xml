@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_imageOrientationFragment"
+            app:destination="@id/imageOrientationFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_dashboardFragment2"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.AudioFragment"
+        android:label="AudioFragment" >
+        <action
+            android:id="@+id/action_audioFragment_to_editorFragment"
+            app:destination="@id/editorFragment" />
+        <action
+            android:id="@+id/action_audioFragment_to_videoEditorFragment"
+            app:destination="@id/videoEditorFragment" />
+        <action
+            android:id="@+id/action_audioFragment_to_exportFragment"
+            app:destination="@id/exportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_videoGalleryFragment"
+            app:destination="@id/videoGalleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.EditorFragment"
+        android:label="fragment_editor"
+        tools:layout="@layout/fragment_editor" >
+        <action
+            android:id="@+id/action_editorFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_editorFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_editorFragment_to_audioFragment"
+            app:destination="@id/audioFragment" />
+        <action
+            android:id="@+id/action_editorFragment_to_exportFragment"
+            app:destination="@id/exportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageOrientationFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.ImageOrientationFragment"
+        android:label="fragment_image_orientation"
+        tools:layout="@layout/fragment_image_orientation" >
+        <action
+            android:id="@+id/action_imageOrientationFragment_to_editorFragment"
+            app:destination="@id/editorFragment" />
+        <action
+            android:id="@+id/action_imageOrientationFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exportFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.ExportFragment"
+        android:label="fragment_export"
+        tools:layout="@layout/fragment_export" >
+        <action
+            android:id="@+id/action_exportFragment_to_editorFragment"
+            app:destination="@id/editorFragment" />
+        <action
+            android:id="@+id/action_exportFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_exportFragment_to_videoEditorFragment"
+            app:destination="@id/videoEditorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoGalleryFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.VideoGalleryFragment"
+        android:label="fragment_video_gallery"
+        tools:layout="@layout/fragment_video_gallery" >
+        <action
+            android:id="@+id/action_videoGalleryFragment_to_videoEditorFragment"
+            app:destination="@id/videoEditorFragment" />
+        <action
+            android:id="@+id/action_videoGalleryFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_videoGalleryFragment_to_videoCompressorFragment"
+            app:destination="@id/videoCompressorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoEditorFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.VideoEditorFragment"
+        android:label="fragment_video_editor"
+        tools:layout="@layout/fragment_video_editor" >
+        <action
+            android:id="@+id/action_videoEditorFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_videoEditorFragment_to_exportFragment"
+            app:destination="@id/exportFragment" />
+        <action
+            android:id="@+id/action_videoEditorFragment_to_audioFragment"
+            app:destination="@id/audioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoCompressorFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.VideoCompressorFragment"
+        android:label="fragment_video_compressor"
+        tools:layout="@layout/fragment_video_compressor" >
+        <action
+            android:id="@+id/action_videoCompressorFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_videoCompressorFragment_to_previewCompressionFragment"
+            app:destination="@id/previewCompressionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/previewCompressionFragment"
+        android:name="com.iobits.photo_to_video_slides_maker.ui.fragment.PreviewCompressionFragment"
+        android:label="PreviewCompressionFragment" >
+        <action
+            android:id="@+id/action_previewCompressionFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+</navigation>
